@@ -1,0 +1,604 @@
+/* --------通配器--------- */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: 400;
+}
+a:hover {
+	color: red;
+}
+body {
+	font-family: "microsoft yahei";
+}
+ul li {
+	list-style-type: none;
+}
+
+.title {
+	border-left: #f64747 4px solid;
+	font-size: 28px;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 10px;
+	margin: 20px 0;
+
+}
+
+#clear {
+	clear: both;
+}
+
+.layout {
+	width: 1200px;		
+	margin: 0 auto;
+}
+
+/* --------- top-bar -----------*/
+#top-bar {
+
+	height: 36px;
+	margin: 0 auto;
+	background-color: #000000;
+}
+
+#top-bar h3 {
+	line-height: 36px;
+	font-size: 14px;
+	font-weight: normal;
+	float: left;
+	background: url(../img/sound-filling-fill.png) no-repeat left center;
+	padding-left: 20px;
+	color: gray;
+}
+
+#top-bar ul {
+	float: right;
+}
+
+#top-bar a {
+	color: #ccc;
+}
+
+#top-bar ul li {
+	margin-right: 8px;
+	list-style-type: none;
+	padding-left: 20px;
+	float: left;
+	line-height: 36px;
+}
+
+#top-bar ul a:hover {
+	color: white;
+}
+
+#top-bar ul .icon1 {
+	background: url(../img/icon_topnav3.png)no-repeat -4px center;
+}
+
+#top-bar ul .icon2 {
+	background: url(../img/icon_topnav5.png)no-repeat -4px center;
+}
+
+#top-bar ul .icon3 {
+	background: url(../img/icon_topnav4.png)no-repeat -4px center;
+}
+
+/* -----------top-nav---------- */
+#top-nav {
+	height: 93px;
+	border-bottom: rgba(0, 0, 0, 0.2) solid 1px;
+}
+
+#top-nav .logo {
+	float: left;
+	margin-top: 30px;
+	margin-right: 140px;
+
+}
+
+#top-nav nav a {
+	width: 96px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	display: block;
+	margin-top: 32px;
+	border-radius: 16px;
+}
+
+#top-nav nav a:hover,
+.cur a {
+	background-color: #F64747;
+	color: white;
+}
+
+#top-nav ul li {
+	float: left;
+	list-style-type: none;
+	margin-right: 5px;
+	line-height: 93px;
+}
+#top-nav form {
+	float: right;
+	margin: 31px 0; 
+}
+#top-nav .key {
+	width: 200px;
+	height: 30px;
+	border: 1px solid #F64747;
+	border-radius: 15px 0 0 15px;
+	padding-left: 15px;
+	vertical-align: middle;
+	outline: none;
+}
+#top-nav .searchbt {
+	border-radius: 0 15px 15px 0;
+	background-color: #F64747;
+	border: none;
+	width: 48px;
+	height: 32px;
+	vertical-align: middle;
+	background: #F64747  url(../img/search.png) no-repeat center;
+	text-indent: -99999px;
+	cursor: pointer;
+	
+}
+/* -----------大边框---------- */
+#wrap {
+	width: 1250px;
+	margin: auto;
+	/* background-color: antiquewhite; */
+	/* 清除浮动标签第二方法:加在浮动标签的外包标签 */
+	overflow: hidden;
+}
+
+/* overflow:hidde与空标签( #clear {
+	clear: both;} )的区别: */
+/* 一不适用于浮动盒子下仍有盒子存在的情况 
+	   但相对方便快捷
+	 空标签是空白的但仍存在,同样是一个盒子
+	 空标签适用于下方仍要续上盒子的情况
+		 */
+#header {
+	height: 130px;
+	background-color: azure;
+}
+
+/* ---------login-register */
+#userform {
+	height: 800px;
+	background: url(../img/loginbg.png) no-repeat center;
+}
+.userlogin {
+	width: 420px;
+	padding-bottom: 32px;
+	background-color: white;
+	float: right;
+	margin-top: 80px;
+	margin-right: 40px;	
+}
+.userlogin span {
+	margin-right: 10px;
+}
+.userlogin h2 {
+	color: #D53C3C;
+	text-align: center;
+	font-size: 24px;
+	margin: 40px 0;
+}
+.userlogin  h2 a {
+	margin-left: 10px;
+}
+.userlogin .comm {
+	width: 250px;
+	height: 40px;
+	padding-left: 40px;
+	border: 1px solid black;
+	outline: none; /* 清除点击时框内边框 */
+}
+.userlogin .username {
+	background: url(../img/form-account.png) no-repeat 8px center;
+}
+.userlogin .userpw {
+	background: url(../img/form-password.png) no-repeat 8px center;
+}
+.userlogin .useremail {
+	background: url(../img/form-email.png) no-repeat 8px center;
+}
+.userlogin .chbox {
+	margin-right: 8px;
+	vertical-align: middle;
+}
+.userlogin .sub {
+	width: 170px;
+	height: 42px;
+	margin-left: 4px;
+	background-color: #f64747;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+.userlogin p {
+	margin-bottom: 32px;
+	color: #999;
+}
+.userlogin form {
+	width: 292px;
+	margin: 0 auto;
+}
+
+/* ---------导航条（面包屑）---------- */
+#curposition {
+	height: 50px;
+	line-height: 50px;
+}
+
+#curposition span {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#content {
+	width: 800px;
+	/* background-color: gray; */
+	/* 浮动标签:即左右分栏,利用浮动一个向左一个向右 */
+	float: left;
+
+}
+/*--------------- 留言面板 -----------*/
+.messtitle {
+	font-size: 28px;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 10px;
+	margin: 20px 0;
+	padding-bottom: 20px;
+	border-bottom: 4px solid #666;
+}
+
+.messageform p label:first-child{
+	display: inline-block;
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 16px;
+}
+
+.messageform .stxt {
+	width: 200px;
+	height: 32px;
+	vertical-align: middle;
+}
+.messageform .mttext {
+	width: 710px;
+}
+.messageform textarea {
+	width: 712px;
+	height: 120px;
+	vertical-align: top;
+}
+.messageform img {
+	vertical-align: middle;
+}
+.messageform label input {
+	margin: 0 5px 0 10px;
+	vertical-align: middle;
+}
+.messageform select {
+	height: 26px;
+}
+.messageform .bt {
+	width: 300px;
+	height: 42px;
+	background-color: #F64747;
+	color: white;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	margin-left: 80px;
+}
+.messageform p {
+	margin-bottom: 24px;
+}
+
+
+
+/*--------------- news --------------*/
+.ntitle {
+	font-size: 36px;
+	color: #f64747;
+	text-align: center;
+	margin: auto;
+}
+
+.subtitle {
+	font-size: 16px;
+	color: #666666;
+	text-align: center;
+	font-weight: 300px;
+	margin-bottom: 40px;
+}
+
+.news {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.news span {
+	color: #FF0000;
+}
+
+.news p {
+	text-indent: 2em;
+	margin: 15px 0;
+}
+
+.news ol,
+.news ul {
+	margin: 15px 0 15px 30px;
+}
+
+.news dd {
+	text-indent: 3em;
+}
+
+.news dt {
+	text-indent: 1em;
+	font-weight: 700;
+}
+
+/*--------------- sidebar --------------*/
+#sidebar {
+	height: 600px;
+	width: 384px;
+	/* 	background-color: red; */
+	/* 浮动标签:即左右分栏,利用浮动一个向左一个向右 */
+	float: right;
+	padding-right: 5px;
+}
+
+#sidebar ul li {
+
+	list-style-type: none;
+	line-height: 30px;
+
+}
+
+#sidebar a {
+	background: url(../img/arrow-right.png) no-repeat left center;
+	padding-left: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	color: #f64747;
+	background: url(../img/arrow-right.png)no-repeat 8px center;
+}
+
+
+.newslist li {
+	
+	overflow: hidden;
+	margin-top: 20px;
+}
+
+/* --------------t2-date------------- */
+.date {
+	width: 80px;
+	height: 97px;
+	background-color: aqua;
+	float: left;
+	border-radius: 8px;
+	margin-right: 20px;
+	line-height: 48px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.date span {
+	font-size: 12px;
+	display: block;
+	border-top: white 1px solid;
+}
+
+/* --------------t2-nitem--------------- */
+
+.nitem {
+	width: 650px;
+	height: 97px;
+	float: right;
+	border-bottom: 1px #CCCCCC dotted;
+	min-height: 100px;
+}
+.nitem h3 {
+	font-size: 24px;
+	margin-bottom: 8px;
+}
+.nitem p {
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 16px;
+	color: #86838c;
+}
+
+
+
+/* -------------- pagenav-------------*/
+
+.pagenav {
+	margin: 30px 0;
+	text-align: center;
+	width: 1250px;
+}
+.pagenav a {
+	display: inline-block;
+	height: 32px;
+	width: 40px;	
+	background-color: #F64747;
+	color: white;
+	line-height: 32px;
+	text-align: center;
+	margin-left: 4px;	
+}
+.pagenav a:hover {
+	color: #808080;
+	background-color: #d53c3c;
+}
+.pagenav .del {
+	background-color: white;
+	color: black;
+	
+}
+/* ------------screen-------------- */
+.screen dt {
+	margin-bottom: 20px;
+}
+
+.screen dd {
+	overflow: hidden;
+	border-bottom: 1px gainsboro solid;
+	padding: 15px 0;
+}
+	
+	
+
+.screen li {
+	float: left;
+	font-size: 14px;
+}
+.screen li a {
+	display: block;	
+	height: 22px;
+	width: 68px;
+	line-height: 22px;
+	text-align: center;
+	margin: 0 12px;
+	border-radius: 8px;
+ 	/* background-color: red; */
+}
+.screen a:hover {
+	color: white;
+	border-radius: 8px;
+	background-color: #F64747;
+}
+
+.screen dd h4 {
+	float: left;
+}
+/* ------------product-lay----------*/
+#product-lay {
+	background-color: #e7e7e7;
+}
+.productlist {	
+	overflow: hidden;
+}
+.productlist li {
+	float: left;
+	text-align: center;
+	background-color: #e7e7e7;
+	border: white 1px solid;
+	width: 288px;
+}
+.productlist li:hover{
+	background-color: #f4f4f3;
+	border: #F64747 solid 1px;
+	opacity: 0.8;
+}
+.productlist h3 {
+	font-size: 16px;
+	font-weight: 400;	
+	color: black;
+	margin-bottom: 4px;
+}
+.productlist h4,h4 a {
+	font-size: 14px;
+	font-weight: 400;
+	color: #666666;
+}
+.productlist p {
+	color: red;
+}
+.productlist img {
+	margin: 15px;
+	width: 268px;
+}
+
+
+/* -------------productlist2--------- */
+.productlist2 {
+	overflow: hidden;
+	/* background-color: #3F3F3F; */
+}
+.productlist img {
+	
+	width: 258px;
+}
+.productlist2 li {
+	float: left;
+	width: 282px;
+	   
+	
+	text-align: center;
+	padding: 8px;
+}
+
+.productlist2 li:nth-child(4n){
+	margin-right: 0;margin: 5px 0;
+
+}
+.productlist2 li:hover {
+	box-shadow: 0 0 20px;
+}
+
+
+
+
+
+/*--------------- footer--------------*/
+#footer {
+	background-color: #3f3f3f;
+	color: white;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#footer h1 {
+	font-size: 28px;
+}
+
+.footer-nav {
+	height: 14px;
+	line-height: 14px;
+	margin: 40px auto;
+	width: 905px;
+	overflow: hidden;
+}
+
+.footer-nav li {
+	float: left;
+	border-right: #CCCCCC solid 1px;
+	width: 150px;
+}
+
+.footer-nav a {
+	color: white;
+}
+
+.footer-nav .last {
+	border: none;
+}
+
+.footer-nav a:hover {
+	color: #F64747;
+}
+
+#footer-content {
+	line-height: 30px;
+}
